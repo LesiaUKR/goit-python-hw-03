@@ -1,7 +1,7 @@
 import random
 
 
-def get_numbers_ticket(min, max, quantity):
+def get_numbers_ticket(min: int, max: int, quantity: int) -> list:
     if not (1 <= min <= max <= 1000):
         print("Error: min or max is out of range")
         return []
@@ -14,5 +14,5 @@ def get_numbers_ticket(min, max, quantity):
         return
 
 
-lottery_numbers = get_numbers_ticket(0, 49, 6)
-print("Ваші лотерейні числа:", lottery_numbers)
+lottery_numbers = get_numbers_ticket(1, 49, 10)
+print("Your lottery digits:", lottery_numbers)

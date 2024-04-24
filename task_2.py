@@ -1,7 +1,7 @@
 import random
 
 
-def get_numbers_ticket(min, max, quantity):
+def get_numbers_ticket(min: int, max: int, quantity: int) -> list[int]:
     if not (1 <= min <= max <= 1000):
         print("Error: min or max is out of range")
         return []
